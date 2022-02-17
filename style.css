@@ -10,19 +10,28 @@ a{
 }
 .hero{
     width: 100%;
-    height: 100vh;
-    background: url(img/bg1.jpg);
+    height: 215vh;
+    background: url(img/ww.jpg);
     background-size: cover;
 }
+
+.header {
+    position: static;
+    top: 1%;
+    left: 25%;
+    right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 100px;
 }
-.logo{
-    max-height: 35px;
-}
+
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -34,7 +43,7 @@ nav ul li a{
     padding: 5px 0;
 }
 nav ul li a:hover{
-    color: #fd4766;
+    color: #90eb98;
 }
 nav ul li a:after{
     content: "";
@@ -42,37 +51,20 @@ nav ul li a:after{
     left: 0;
     width: 0;
     height: 3px;
-    background: #fd4766;
+    background: #90eb98;
     transition: .3s;
     bottom: 0;
 }
 nav ul li a:hover:after{
     width: 100%;
 }
-.btn{
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 16px 40px;
-    border-radius: 500px;
-    display: inline-block;
-    font-weight: 500;
-    transition: all .4s ease-in-out;
-    background-size: 152% 100%;
-    background: #fd4766;
-    border: 2px solid #fd4766;
-}
-.btn:hover{
-    background: transparent;
-    border-color: #fd4766;
-    color: #fd4766;
-}
 .content{
     position: absolute;
-    top: 35%;
-    left: 8%;
+    top: 27%;
+    left: 32%;
+    right: 2%;
 }
+
 .content .title{
     color: #1f1f25;
     font-size: 15px;
@@ -80,10 +72,12 @@ nav ul li a:hover:after{
     letter-spacing: 4px;
     display: inline-block;
     margin-bottom: 20px;
-    background: linear-gradient(120deg, #757575 20.69%, #fd4755 50.19%,#000000 79.69%);
+    background: linear-gradient(120deg, #adecbd 20.69%, #71f18d 50.19%,#65e959 79.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
 .content h1{
     color: #1f1f25;
     font-size: 75px;
@@ -91,54 +85,49 @@ nav ul li a:hover:after{
     line-height: 90px;
     text-transform: inherit;
     width: 70%;
+    background-image: url(https://media.giphy.com/media/d2Z3ViQOideIf48U/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 120px;
+    line-height: .75;
+    margin: 10px 0;
 }
 .content h1 span{
-    color: #fd4766;
+    color: #a4ecaa;
 }
 .content p{
     width: 55%;
-    color: #757575;
+    color: #706565;
     margin-top: 25px;
     margin-bottom: 30px;
 }
 .contact .section-title{
-    color: #fd4766;
+    color: #90eb98;
     text-align: center;
     font-size: large;
     letter-spacing: 4px;
 }
-.contact{
-    width: 100%;
-    height: 100vh;
-    background: url(img/bg1.jpg);
-    background-size: cover;
-}
-.center1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 5%;
-}
-.center2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 5%;
-}
-.center3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 5%;
+
+.right img {
+    margin-left:2%;
+    height:300px;
+    width:250px;
+    border-radius:500px;
+    border-style: solid;
+    border-color: #a4ecaa;
+    border-width:5px;
+    float: left;
+    padding: 15px;
+
 }
 
-/* This is to add a background color and some padding around the form */
-.cf {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    position: absolute;
-    top: 40%;
-    left: 8%;
-    right: 10%;
+.left {
+    font-size: 15px;
+    text-align: left;
+    float:left;
+    width:15px;
+    padding: 15px;
 }
